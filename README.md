@@ -4,7 +4,7 @@ The *contextfun* python package provides functions for context-based
 filtering and mapping.
 
 We can filter a list with the Python's own
-[filter](https://docs.python.org/3/library/functions.html#filter)
+[*filter()*](https://docs.python.org/3/library/functions.html#filter)
 function, based on the properties of items.
 For example, we can filter out prime numbers (`filter(is_prime, range(10))`).
 But what if we are interested in numbers standing in the list before prime
