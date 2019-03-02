@@ -143,7 +143,7 @@ Requirements:
 Install other development dependencies:
 
 ```shell
-make devenv
+make dev
 ```
 
 Run automated test-suite:
@@ -158,6 +158,8 @@ make test
   * Work in progress
 * 0.6.0
   * initial release
+* 0.6.1
+  * updated readme 
 
 ## 5 Acknowledgments
 
