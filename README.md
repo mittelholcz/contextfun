@@ -156,8 +156,11 @@ make test
 
 * 0.5.0
   * Work in progress
+* 0.6.0
+  * initial release
 
 ## 5 Acknowledgments
 
-* [@sassbalint](https://github.com/sassbalint)
+* [@dlazesz](https://github.com/dlazesz)
 * [@esztersimon](https://github.com/esztersimon)
+* [@sassbalint](https://github.com/sassbalint)
