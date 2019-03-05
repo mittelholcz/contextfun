@@ -162,7 +162,7 @@ make test
 * 0.6.0
   * initial release
 * 0.6.1
-  * updated readme 
+  * updated readme
 
 ## 5 Acknowledgments
 
