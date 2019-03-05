@@ -1,5 +1,8 @@
 # Contextfun
 
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mittelholcz/contextfun/blob/master/LICENSE)
+[![version](https://img.shields.io/badge/version-0.6.1-blue.svg)](https://github.com/mittelholcz/contextfun/releases)
+
 The *contextfun* python package provides functions for context-based
 filtering and mapping.
 
