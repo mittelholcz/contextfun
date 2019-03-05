@@ -76,9 +76,10 @@ __release:
 		fi
 	@echo "NEW VERSION: $(NEWVER)"
 	@pipenv run pytest -q test/
+	@sed -i -r "s/pypi-$(OLDVER)/pypi-$(NEWVER)/" README.md
 	@sed -i -r "s/version='$(OLDVER)'/version='$(NEWVER)'/" setup.py
 	@make -s build
-	@git add setup.py
+	@git add README.md setup.py
 	@git commit -m'new release'
 	@git tag -a $(NEWVER) -m'release: $(NEWVER)'
 	git push origin $(NEWVER)
