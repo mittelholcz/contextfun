@@ -60,11 +60,12 @@ def contextual_filter(iterable, predicate, before=0, after=0, quantifier=all):
     """
     size = int(before) + int(after) + 1
     fake = object()
+    iterable = ((x, predicate(x)) for x in iterable)
     for i in frameiter(iterable, size, fake=fake, before=before, after=after):
         context = i[:before] + i[before+1:]
-        context = (predicate(x) for x in context if x != fake)
+        context = (x[1] for x in context if x != fake)
         if quantifier(context):
-            yield i[before]
+            yield i[before][0]
 
 
 def contextual_map(iterable, mapping, predicate, before=0, after=0, quantifier=all):
@@ -91,10 +92,11 @@ def contextual_map(iterable, mapping, predicate, before=0, after=0, quantifier=a
     """
     size = before + after + 1
     fake = object()
+    iterable = ((x, predicate(x)) for x in iterable)
     for i in frameiter(iterable, size, fake=fake, before=before, after=after):
         context = i[:before] + i[before+1:]
-        context = (predicate(x) for x in context if x != fake)
+        context = (x[1] for x in context if x != fake)
         if quantifier(context):
-            yield mapping(i[before])
+            yield mapping(i[before][0])
         else:
-            yield i[before]
+            yield i[before][0]
