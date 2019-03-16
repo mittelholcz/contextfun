@@ -9,7 +9,7 @@ with open('README.md', 'r') as fh:
 # This call to setup() does all the work
 setup(
     name="contextfun",
-    version='0.6.1',
+    version='0.7.0',
     author="mittelholcz",
     author_email="dev.mittelholcz@gmail.com",
     description="context based filtering and mapping",
