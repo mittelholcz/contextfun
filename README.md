@@ -163,6 +163,8 @@ make test
   * initial release
 * 0.6.1
   * updated readme
+* 0.7.0
+  * performance improvement
 
 ## 5 Acknowledgments
 
