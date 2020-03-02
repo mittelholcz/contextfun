@@ -168,8 +168,6 @@ make test
 
 ## 5 Acknowledgments
 
-* [@dlazesz](https://github.com/dlazesz)
 * [@esztersimon](https://github.com/esztersimon)
-* [@sassbalint](https://github.com/sassbalint)
 * [@sassbalint](https://github.com/sassbalint)
 * [@takdavid](https://github.com/takdavid)
